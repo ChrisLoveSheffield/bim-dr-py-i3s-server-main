@@ -1,0 +1,15 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# all slpk
+slpk/**
+
+# build artifacts
+dist/
+build/
+main.spec
+
+.venv/
+.vscode/
