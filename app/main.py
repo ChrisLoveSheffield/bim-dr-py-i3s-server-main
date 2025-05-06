@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from app.routers import slpkRouter  # Import the routers
+from app.routers import slpkRouter, usersRouter  # Import the routers
 from fastapi.middleware.cors import CORSMiddleware
 import re
 from starlette.routing import Route
@@ -19,8 +19,13 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+ls_router = [slpkRouter,
+             usersRouter
+             ]
 # Include the router
-app.include_router(slpkRouter.router)
+for router in ls_router:
+    app.include_router(router.router)
+
 for route in app.router.routes:
     if isinstance(route, Route):
         route.path_regex = re.compile(route.path_regex.pattern, re.IGNORECASE)
