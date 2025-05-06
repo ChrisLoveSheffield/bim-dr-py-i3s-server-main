@@ -20,6 +20,7 @@ httptools==0.6.4
 httpx==0.28.1
 idna==3.10
 importlib_metadata==8.7.0
+iniconfig==2.1.0
 itsdangerous==2.2.0
 Jinja2==3.1.6
 macholib==1.16.3
@@ -31,6 +32,7 @@ packaging==24.2
 passlib==1.7.4
 pefile==2023.2.7
 pendulum==3.0.0
+pluggy==1.5.0
 pydantic==2.11.3
 pydantic-extra-types==2.10.3
 pydantic-settings==2.9.1
@@ -39,6 +41,7 @@ Pygments==2.19.1
 pyinstaller==6.13.0
 pyinstaller-hooks-contrib==2025.3
 PyJWT==2.10.1
+pytest==8.3.5
 python-dateutil==2.9.0.post0
 python-dotenv==1.1.0
 python-multipart==0.0.20

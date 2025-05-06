@@ -25,7 +25,7 @@ pip freeze > requirements.txt
 test
 
 ```
-py test.py
+pytest
 ```
 
 package
