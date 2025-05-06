@@ -30,8 +30,8 @@ fake_users_db = {
 
 
 class Token(BaseModel):
-    access_token: str
-    token_type: str
+    access_token: str | None
+    token_type: str | None
 
 
 class TokenData(BaseModel):
